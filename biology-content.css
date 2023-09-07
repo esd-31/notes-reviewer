@@ -1,0 +1,73 @@
+
+
+body {
+    background-color: slateblue;
+}
+.biology-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.biology-content > img {
+    width: 500px;
+    border: solid 2px slateblue;
+}
+.download-pdf {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.download-pdf > h2 {
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 4px 5px 10px #000;
+    font-size: 30px;
+}
+.download-pdf > button {
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    border: solid 2px #fff;
+    width: 300px;
+    color: #fff;
+    font-weight: bolder;
+}
+.download-pdf > button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .biology-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .biology-content > img {
+        width: 280px;
+    }
+    .download-pdf > h2 {
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 4px 5px 10px #000;
+        font-size: 20px;
+    }
+    .download-pdf > button {
+        padding: 17px;
+        border: none;
+        background-color: transparent;
+        border: solid 2px #fff;
+        width: 250px;
+        color: #fff;
+        font-weight: bolder;
+    }
+    .download-pdf {
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+}

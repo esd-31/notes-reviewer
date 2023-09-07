@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIENCE REVIEWER</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5205/5205074.png">
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <script src="../javascript/index.js" defer></script>
+</head>
+
+<body>
+    <div class="custom-loader"></div>
+    <div class="index" style="display: none;">
+        <div class="header-container">
+            <div class="menu-container">
+                <div class="menu-content">
+                    <div class="web-title-header">
+                        <h2>SCIENCE LEARNING</h2>
+                    </div>
+                    <div class="menu-icon">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-list"
+                            viewBox="0 0 16 16" id="toggle-menu" onclick="myMenu()">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </div>
+                    <div class="menu-links" style="display: none;">
+                        <strong onclick="linkHome()">Home</strong>
+                        <strong onclick="linkQuiz()">Start Quiz</strong>
+                        <strong>Aboutdeveloper</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="reviewer-title">
+                <h1>TOOL GUIDE REVIEWER</h1>
+            </div>
+            <div class="content"></div>
+            <div class="reviewer-started">
+                <button onclick="btnSTARTED()">GET STARTED</button>
+                <div class="modal-container" style="display: none;">
+                    <div class="close-icon">
+                        <img src="../images/close.png" onclick="closeModal()">
+                    </div>
+                    <div class="modal-content">
+                        <div class="selector-opt">
+                            <strong>CHOOSE TOPICS: </strong>
+                            <select onchange="topicOptions()" id="value-opt-topics">
+                                <option value="">NONE</option>
+                                <option value="biology">BIOLOGY</option>
+                                <option value="chemistry">CHEMISTY</option>
+                                <option value="ptable">PERIODIC TABLE</option>
+                            </select>
+                        </div>
+                        <div class="reviewer-links">
+                            <button id="demo" disabled="true">GO TO LEARNING MATERIALS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="chemistry-blog-info-container">
+        <div class="chemistry-blog-info-content">
+            <div class="chemistry-context">
+                <h2>LEARN ABOUT SCIENCE GRADE 7 LEVEL:</h2>
+                <ul>
+                    <li>BIOLOGY </li>
+                    <li>CHEMISTRY </li>
+                    <li>PERIODIC TABLE </li>
+                </ul>
+            </div>
+            <img src="../images/chemistry_gif.gif">
+        </div>
+    </div>
+    <div class="start-quizzes-science-container">
+        <div class="start-quizzes-science-content">
+            <div class="yeah-science-gif">
+                <img src="../images/quiz-gif.gif" alt="">
+            </div>
+            <h1>GO TO LEARN ABOUT IN SCIENCE??</h1>
+        </div>
+        <div class="parent-captcha">
+            <div class="captcha-container" style="display: none;">
+                <div class="captcha-content">
+                    <div class="frame-captcha">
+                        <strong id="captcha-val">zX1o</strong>
+                    </div>
+                    <div class="btn-captcha-go">
+                        <button id="btn-go" disabled>Go</button>
+                        <input type="text" id="input-captcha" placeholder="Input captcha" oninput="captchaVal()">
+                        <div class="refresh-icon">
+                            <img src="../images/refresh-icon.png" onclick="refreshCaptcha()">
+                        </div>
+                    </div>
+                    <div class="links-to-quizzes-about-science">
+                        <a href="science-quiz.html" id="go-to-quizzes" style="text-align: center;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-btn">
+                <button onclick="showCaptcha()" id="toggle-captcha">START LEARNING</button>
+            </div>
+        </div>
+    </div>
+    <div class="prayer-container">
+        <div class="prayer-title">
+            <h1>FREE PRAYER</h1>
+        </div>
+        <div class="prayer-content">
+            <img src="https://w0.peakpx.com/wallpaper/36/55/HD-wallpaper-praying-rosary-hands-cross-prayer-rosary.jpg">
+            <img
+                src="https://images.pexels.com/photos/6663974/pexels-photo-6663974.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+
+        </div>
+        <div class="submit-prayer-container">
+            <div class="submit-prayer-content">
+                <form action="https://formsubmit.co/eduard.duenas31@gmail.com" method="POST">
+                    <input type="text" id="input-prayer" name="prayer" placeholder="Type your prayer here.." required>
+                    <div class="prayer-controls-btn">
+                        <input type="submit" value="SEND YOUR PRAYER">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <h1 style="font-family: impact; text-align: center;">SCIENCE REVIEWER
+        </h1>
+        <div class="footer-content">
+            <div class="about-developer">
+                <h3>ABOUT DEVELOPER:</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

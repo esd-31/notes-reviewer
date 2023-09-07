@@ -1,0 +1,594 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+}
+.custom-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:150px;
+    height:40px;
+    background: 
+      radial-gradient(circle closest-side,#766DF4 90%,#0000) 0%   50%,
+      radial-gradient(circle closest-side,#766DF4 90%,#0000) 50%  50%,
+      radial-gradient(circle closest-side,#766DF4 90%,#0000) 100% 50%;
+    background-size:calc(100%/3) 100%;
+    background-repeat: no-repeat;
+    animation:d7 1s infinite linear;
+  }
+  @keyframes d7 {
+      33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+      50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+      66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+  }
+
+.header-container {
+    background-color: slateblue;
+    padding: 40px;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 4%;
+    /* position: relative; */
+}
+
+.reviewer-tools-content>img {
+    width: 400px;
+    height: 40vh;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    user-select: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 9px 4px 4px #000;
+}
+
+.reviewer-tools-content>img:hover {
+    transform: scale(1.1);
+}
+
+.reviewer-tools-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.reviewer-started {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewer-started>button {
+    padding: 20px;
+    width: 300px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: slateblue;
+    color: #ffffff;
+}
+.web-title-header > h2 {
+    background-color: #dddd;
+    color: slateblue;
+    padding: 12px;
+    user-select: none;
+    border-right: solid 15px #ffffff;
+    border-top: none;
+}
+.web-title-header > h2:hover {
+    background-color: #ffffff;
+    transition: 1s;
+}
+.reviewer-started>button:hover {
+    box-shadow: 9px 4px 4px #000;
+}
+#input-prayer {
+    padding: 30px;
+    height: 25vh;
+    width: 600px;
+    background-color: transparent;
+    border: solid 4px slateblue;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.reviewer-title> h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.modal-container {
+    background-color: #5C5470;
+    width: 1200px;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: url("https://img.freepik.com/free-vector/colorful-science-education-background_23-2148486110.jpg?w=2000"); */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 15px;
+    animation: 1s slideDown forwards;
+}
+
+@keyframes slideDown {
+    from {
+        margin-top: 0%;
+    }
+
+    to {
+        margin-top: 8%;
+    }
+}
+
+.selector-opt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 1em;
+}
+
+.selector-opt>select {
+    padding: 20px;
+    width: 350px;
+    font-size: 21px;
+    background-color: transparent;
+    border-bottom: solid 4px #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    color: #279EFF;
+}
+
+.selector-opt>strong {
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.reviewer-links>button {
+    padding: 17px;
+    border: none;
+    font-weight: bolder;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+
+.container-credentials-user {
+    width: 1400px;
+    height: 65vh;
+    background-color: #ffffff;
+    box-shadow: 9px 4px 6px #000;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-icon {
+    padding: 10px;
+}
+
+.close-icon>img {
+    cursor: pointer;
+    width: 40px;
+}
+
+.chemistry-blog-info-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chemistry-context {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: solid 5px slateblue;
+    padding: 70px;
+    margin-left: 10%;
+}
+
+.chemistry-context:hover {
+    background-color: slateblue;
+    color: #ffffff;
+    transition: 700ms;
+}
+
+.chemistry-blog-info-container {
+    margin-top: 10%;
+}
+.yeah-science-gif > img {
+    width: 400px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.start-quizzes-science-container {
+    margin-top: 5%;
+}
+.start-quizzes-science-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.start-quizzes-science-content > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.quiz-btn  {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.quiz-btn > button {
+    padding: 20px;
+    background-color: slateblue;
+    color: #ffffff;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 300px;
+}
+.quiz-btn > button:hover {
+    box-shadow: 9px 4px 4px #000;
+}
+.parent-captcha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.frame-captcha {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #5C5470;
+    padding: 20px;
+    height: 15vh;
+}
+.frame-captcha > strong {
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+    color: #ffffff;
+}
+
+.btn-captcha-go > button {
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btn-captcha-go {
+    display: flex;
+    align-items: center;
+}
+.btn-captcha-go > input {
+    padding: 10px;
+    width: 198px;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.refresh-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.refresh-icon > img {
+    cursor: pointer;
+}
+.refresh-icon > img:hover {
+    opacity: 0.7;
+}
+.refresh-icon > small {
+    font-weight: bolder;
+    user-select: none;
+}
+
+.footer-container {
+    background-color: #000;
+    color: #ffffff;
+}
+.links-to-quizzes-about-science > a {
+    text-align: center;
+}
+.menu-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-links > strong {
+    padding: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #ffffff;
+    font-weight: bolder;
+    gap: 2em;
+    animation: 1.5s fade forwards;
+
+}
+.menu-links > strong:hover {
+    /* text-shadow: 9px 4px 10px #000; */
+    background-color: #dddd;
+    color: slateblue;
+    border-radius: 10px;
+ 
+}
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1.5;
+    }
+}
+
+.menu-icon > svg {
+    cursor: pointer;
+}
+
+.links-to-quizzes-about-science > a {
+    text-decoration: none;
+    color: #000;
+    animation: 1s slideToRight forwards;
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-500px);
+    }
+}
+.prayer-container {
+    margin-top: 10%;
+    background-color: #272829;
+    padding: 50px;
+}
+.prayer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-top: 5%;
+
+
+}
+.prayer-title > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+.prayer-content > img {
+    width: 500px;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 9px 4px 5px #000;
+}
+.prayer-content > img:hover {
+  transform: scale(0.9);
+}
+.submit-prayer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.prayer-controls-btn {
+    margin-top: 2%;
+
+}
+.prayer-controls-btn > input{
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: slateblue;
+    color: #ffffff;
+}
+
+@media(max-width:600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        margin-top: 4%;
+    }
+
+    .chemistry-blog-info-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1em;
+        margin-top: 4%;
+    }
+
+    .chemistry-blog-info-content>img {
+        width: 400px;
+    }
+
+    .reviewer-tools-content>img {
+        width: 240px;
+    }
+
+    .chemistry-context {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        border: solid 5px slateblue;
+        padding: 40px;
+        margin-right: 5%;
+    }
+
+    .modal-container {
+        background-color: slateblue;
+        width: 350px;
+        height: 55vh;
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* background-image: url("https://img.freepik.com/free-vector/colorful-science-education-background_23-2148486110.jpg?w=2000"); */
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        animation: 1s slideDown forwards;
+    }
+
+    /* .selector-opt > select {
+        padding: 15px;
+        width: 250px;
+        font-size: 15px;
+        background-color: transparent;
+        border-bottom: solid 4px #ffffff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+        color: slateblue;
+        font-weight: bolder;
+
+    } */
+    .web-title-header > h2 {
+        background-color: #dddd;
+        color: slateblue;
+        padding: 7px;
+        user-select: none;
+        border-right: solid 15px #ffffff;
+        border-top: none;
+    }
+
+    .selector-opt>strong {
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    .selector-opt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 10%; */
+    }
+
+    .selector-opt>select {
+        padding: 14px !important;
+        width: 320px !important;
+        font-size: 14px !important;
+        background-color: transparent;
+        border-bottom: solid 3px #ffffff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .reviewer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviewer-links>button {
+        padding: 10px;
+        margin-left: -2.50%;
+    }
+
+    .close-icon>img {
+        width: 25px;
+    }
+
+    .chemistry-context>h2 {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .start-quizzes-science-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .yeah-science-gif > img {
+        width: 200px;
+    }
+    .yeah-science-gif > h1 {
+        font-size: 50px !important;
+    }
+    .start-quizzes-science-content > h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 15px;
+    }
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-links {
+        border-top: solid 2px #fff;
+        margin-top: -5%;
+    }
+    .menu-links > strong {
+        display: flex;
+        flex-direction: column;
+      text-align: center;
+    }
+    .prayer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prayer-content > img {
+        width: 300px;
+    }
+    .submit-prayer-content > input {
+        width: 250px;
+        border: solid 2px slateblue;
+    }
+ 
+    /* .prayer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    } */
+    .submit-prayer-content {
+        margin-top: 30px;
+    }
+   
+    #input-prayer {
+        width: 250px;
+    }
+    .prayer-controls-btn > input {
+        border: none;
+    }
+    .btn-captcha-go {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .links-to-quizzes-about-science > a {
+        text-align: center;
+    }
+}

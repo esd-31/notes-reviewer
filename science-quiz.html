@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIENCE REVIEWER</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5205/5205074.png">
+    <link rel="stylesheet" href="../stylesheets/quiz.css">
+    <script src="../javascript/quiz.js" defer></script>
+</head>
+
+<body>
+    <div class="science-quiz-container" id="toggle-quiz" style="display: block;">
+        <div class="science-quiz-content">
+            <div class="form-frame">
+                <div class="form-frame-title">
+                    <h1>SIMPLE EXAM ABOUT SCIENCE</h1>
+                    <strong><b>HINT: lower case only!!</b></strong>
+                </div>
+                <div class="questionaire">
+                    <p>1. Who is the father of science?</p>
+                    <input type="text" id="f-s-input-ans">
+                    <p>2. Who is the father of biology?</p>
+                    <input type="text" id="f-b-input-ans">
+                    <p>3. How many planets in the solar system?</p>
+                    <input type="number" id="planets-input-ans">
+                    <p>4. solid liquid and gas are the three________</p>
+                    <input type="text" id="solid-liquid-input-ans">
+                    <p>5. the particles in a solid are arrange in a</p>
+                    <input type="text" id="solid-input-ans">
+                    <div class="btn-submit">
+                        <button onclick="btnSubmit()">Submit</button>
+                        <button onclick="showSUMMARY()">Show Summary</button>
+                    </div>
+                    <div class="modal-container" style="display: none;">
+                        <div class="modal-content">
+                            <div class="show-summary-result">
+                                <p id="correct-ans-one"></p>
+                                <p id="correct-ans-two"></p>
+                                <p id="correct-ans-three"></p>
+                                <p id="correct-ans-four"></p>
+                                <p id="correct-ans-five"></p>
+                                <p id="wrong-ans"></p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+
+</html>
